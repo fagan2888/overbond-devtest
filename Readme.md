@@ -14,6 +14,8 @@ Run file 'main.py'. Follow the prompts on the screen: you will first be asked to
 | G1     | government | 9.4 years   | 3.70% |
 | G2     | government | 12 years    | 4.80% |
 
+Sample data currently stored in the "data" folder.
+
 ## Technical Choices
 
 Technologies/frameworks used: Python 3.6.5, unittest framework, csv library.
@@ -32,3 +34,4 @@ If this was less than the current minimum difference (or, when calculating for t
 
 Runtime of this algorithm is O(n^2). This is more efficient than storing an array of all the differences and having to sort it to find minumum difference, which would make the algorithm's worst-case runtime at least O(n^2*logn).
 
+Challenge #2 could be further optimized, at least in the average case, by creating a Binary Search Tree with each selected corporate bond as the root, government bonds with longer terms as the right subtree and those shorter terms as the left subtree. Output could also have been directed to another .csv file, so it could be saved and modified if necessary.
