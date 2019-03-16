@@ -30,4 +30,5 @@ For each corporate bond, the difference between its term and each government bon
 
 If this was less than the current minimum difference (or, when calculating for the curve in Challenge #2: the minimum difference for a longer or shorter term specifically), it became the new minimum difference, and the government bond became the new benchmark. 
 
-Runtime of this algorithm is O(n^2). This is more efficiently than storing all the differences and having to sort it, which would make the algorithm at least O(n^2*logn).
+Runtime of this algorithm is O(n^2). This is more efficient than storing an array of all the differences and having to sort it to find minumum difference, which would make the algorithm's worst-case runtime at least O(n^2*logn).
+
